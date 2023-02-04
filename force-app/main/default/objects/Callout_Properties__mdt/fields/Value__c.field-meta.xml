@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Value__c</fullName>
+    <description>The value should contain a static value if the type is the header, if the type value is the body, this value should be the callout name configured in JSON Generator(JSON_Generator__mdt) object records.</description>
     <externalId>false</externalId>
     <fieldManageability>DeveloperControlled</fieldManageability>
     <label>Value</label>

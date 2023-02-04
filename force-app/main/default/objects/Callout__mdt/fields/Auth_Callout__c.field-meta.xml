@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Auth_Callout__c</fullName>
+    <description>The Developer name of Callout__mtd record which has been marked as Is_Auth_Callout__c true.</description>
     <externalId>false</externalId>
     <fieldManageability>DeveloperControlled</fieldManageability>
     <label>Auth Callout</label>

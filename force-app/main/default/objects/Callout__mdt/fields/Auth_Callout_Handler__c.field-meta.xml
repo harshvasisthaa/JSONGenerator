@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Auth_Callout_Handler__c</fullName>
+    <description>The class name which implements CalloutInterfaces.AuthCalloutHandler interface, to handle the response of auth callout and setup parameters in the current HTTP request.</description>
     <externalId>false</externalId>
     <fieldManageability>DeveloperControlled</fieldManageability>
     <label>Auth Callout Handler</label>

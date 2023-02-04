@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Pre_Auth_Callout_Validation__c</fullName>
+    <description>The class name which implements CalloutInterfaces.PreAuthCalloutValidation interface, to validate if the authorization HTTP request has to be executed.</description>
     <externalId>false</externalId>
     <fieldManageability>DeveloperControlled</fieldManageability>
     <label>Pre-Auth Callout Validation</label>
