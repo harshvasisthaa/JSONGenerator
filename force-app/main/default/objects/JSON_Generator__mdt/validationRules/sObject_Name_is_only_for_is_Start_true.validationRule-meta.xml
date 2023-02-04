@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sObject_Name_is_only_for_is_Start_true</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(Is_Start__c,  ISBLANK( sObject_Name__c ) ,  NOT(ISBLANK( sObject_Name__c )) )</errorConditionFormula>
+    <errorMessage>The sObject name should be populated only for is start true</errorMessage>
+</ValidationRule>

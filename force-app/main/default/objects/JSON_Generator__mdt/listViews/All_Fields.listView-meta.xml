@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Fields</fullName>
+    <columns>DeveloperName</columns>
+    <columns>Callout_Name__c</columns>
+    <columns>Is_Start__c</columns>
+    <columns>Object_Field_API_Name__c</columns>
+    <columns>Parent_JSON_Generator__c</columns>
+    <columns>Property_Name__c</columns>
+    <columns>Data_Type__c</columns>
+    <columns>Property_Type__c</columns>
+    <columns>sObject_Name__c</columns>
+    <columns>Static_Value__c</columns>
+    <columns>Apex_Class_API_Name__c</columns>
+    <columns>Is_Disabled__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Fields</label>
+</ListView>
