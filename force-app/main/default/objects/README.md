@@ -50,7 +50,7 @@
 -- To indicate the property has been disabled and will not be utilized by the framework.
 
 
-## Callout Properties (Callout_Properties__mdt)
+## JSON Generator (JSON_Generator__mdt)
 
 - Custom Metadata Record Name (DeveloperName)
 - Callout Name(Callout_Name__c)
