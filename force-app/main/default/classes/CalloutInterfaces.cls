@@ -64,5 +64,20 @@ public with sharing class CalloutInterfaces {
 		**/
 		void setupCallout(HttpRequest request);
 	}
+
+	/**
+	*	Description:
+	*	The interface has to be implemented if some property configured in Callout_Properties__mdt for Custom Property
+	**/
+	public interface CustomPropertyValue{
+		/**
+		*	Description:
+		*	Any class implements the CustomPropertyValue interface it has to have the getValue method.
+		*	This method should be utilized to return the value of custom header or custom JSON
+		*
+		*	@return  String  	calculated header or body value.
+		**/
+		String getValue();
+	}
 	
 }

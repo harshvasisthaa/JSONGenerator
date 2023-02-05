@@ -137,15 +137,26 @@ public with sharing class CalloutHandler {
 	private void setRequestParameters(HttpRequest req){
 		for(Callout_Properties__mdt prop : calloutProperties){
 			if(prop.Type__c == 'Header'){
-				req.setHeader(prop.Key__c, prop.Value__c);
+				if(String.isNotEmpty(prop.Value__c))
+					req.setHeader(prop.Key__c, prop.Value__c);
+				else if(String.isNotEmpty(prop.Custom_Property__c))
+					req.setHeader(prop.Key__c, this.getCustomValue(prop.Custom_Property__c));
 			}else if(prop.Type__c == 'Body'){
 				/* 	
 				*	If body has been configured in Callout_Properties__mdt the process will call the 
 				*	JSONGeneratorHandler and generate the JSON as per the configuration in JSON_Generator__mdt.
 				*/
-				req.setBody(new JSONGeneratorHandler(prop.Value__c, this.recordWhereClause).getJSON());
+				if(String.isNotEmpty(prop.Value__c))
+					req.setBody(new JSONGeneratorHandler(prop.Value__c, this.recordWhereClause).getJSON());
+				else if(String.isNotEmpty(prop.Custom_Property__c))
+					req.setBody(this.getCustomValue(prop.Custom_Property__c));
 			}
 		}
+	}
+
+	private String getCustomValue(String customProperty){
+		CalloutInterfaces.CustomPropertyValue customProp = (CalloutInterfaces.CustomPropertyValue) Type.forName(customProperty).newInstance();
+		return customProp.getValue();
 	}
 	
 	/**

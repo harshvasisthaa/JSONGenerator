@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Apex_Class_API_Name__c</fullName>
+    <description>The class name which implements JSONGeneratorHandler.JSONPropertyInterface interface, to get the apex logic based driven value for JSON record.</description>
     <externalId>false</externalId>
     <fieldManageability>DeveloperControlled</fieldManageability>
     <label>Apex Class API Name</label>

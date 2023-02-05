@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Custom_Property__c</fullName>
+    <description>The class name which implements CalloutInterfaces.CustomPropertyValue interface, to get the custom property value for the header or body.</description>
     <externalId>false</externalId>
     <fieldManageability>DeveloperControlled</fieldManageability>
     <label>Custom Property</label>

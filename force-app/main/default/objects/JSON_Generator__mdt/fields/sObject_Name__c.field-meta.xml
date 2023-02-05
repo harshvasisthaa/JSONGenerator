@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>sObject_Name__c</fullName>
+    <description>This SObject name (i.e. Account) from where the date has to queried, the value should be provided for the record which has Is_Start__c as TRUE.</description>
     <externalId>false</externalId>
     <fieldManageability>DeveloperControlled</fieldManageability>
     <label>sObject Name</label>

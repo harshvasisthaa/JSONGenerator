@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Is_Disabled__c</fullName>
     <defaultValue>false</defaultValue>
+    <description>To indicate the property has been disabled and will not be utilized by the framework.</description>
     <externalId>false</externalId>
     <fieldManageability>DeveloperControlled</fieldManageability>
     <label>Is Disabled</label>
